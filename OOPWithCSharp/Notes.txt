@@ -1,0 +1,34 @@
+﻿OOP:-
+Object oriented programming/paradiagm, its abot objects and their relationships.
+
+Class: Recepie to make objects.
+It contains only properties and methods.
+
+properties: nouns.
+functions/methods: verbs.
+
+Object: Is a physical existance of class.
+
+We have some types of relations or Pillars of OOP:-
+
+1-Inheritance: Implicit Posession of properties and methods in child class from parent class. "is a" relation.
+	a-Single: one parent one child
+	b-Multilevel: Several children of a parent.
+	c-Multipath: Several paths of children of a parent. Tree structure.
+	d-Multiple: When you have one or more parents of a child. Its not implimentable in programming languages except C++.
+
+2-Encapsulation: Accessibility of the properties and mathods.
+To impliment this we use access modifiers:-
+a-public: Accessible to every object.
+b-private: Cannot be accessed by any object.
+c-protected: Only be accessed within heirarchy or family.
+d-internal: Can only be accessed within the DLL or Project.
+e-protected-internal: 
+
+3-Containment: "has a relation":
+	a-Aggregation.
+	b-composition.
+
+4-Polymorphism. (Specialization)
+5-Abstraction. (Generalization)
+
