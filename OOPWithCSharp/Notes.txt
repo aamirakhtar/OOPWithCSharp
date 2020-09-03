@@ -32,3 +32,39 @@ e-protected-internal:
 4-Polymorphism. (Specialization)
 5-Abstraction. (Generalization)
 
+Inheritance is interchangeably used by words:-
+Extends.
+Parent Child relation.
+Heirarchy.
+Root class is called as Base Class.
+Family.
+
+
+Containment:-
+Having an object of another class as property in the current class.
+"has a relation".
+
+-It can be used as alternative to inheritance.
+-Its loosely coupled but has less code reusability.
+-In contrast Inheritance is tighly coupled but has better code reusability.
+
+-Inheritance is tightly coupled bcz changing anything in the parent can lead to crash in children classes.
+
+1-Aggregation.
+	When a parent is not dependent upon children for existance.
+	When a parent can exists wihtout the children.
+	eg: 
+	Infotainment system in the car, bcz without the system car can exists.
+	
+2-Composition:-
+	When a parent is dependent upon children for existance.
+	When a parent cannot exists without the children.
+
+	eg:
+	Without the engine car cannot exists.
+	Without Brain human cannot exists.
+
+-Always prefer containment over inheritance.
+-Whereever comonalities are clear, "is a relation" is clear and most importantly code reusability is acheived then use inheritance, else
+use containment. Thats why in real life projects inheritance and containment both are very important features and are used frequently but containment
+always be used mre freqently than inheritance.

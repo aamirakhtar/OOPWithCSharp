@@ -6,22 +6,29 @@ using System.Threading.Tasks;
 
 namespace OOPWithCSharp
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             OrthopediacSurgeon obj = new OrthopediacSurgeon();
 
-            Human human = new Human();            
+            Human human = new Human();
+
+            CricketerA cricketerA = new CricketerA(); // Inheritance
+            cricketerA.Batting();
+
+            CricketerB cricketerB = new CricketerB(); //Containment
+            cricketerB.Batting();
 
             Console.ReadLine();
         }
     }
 
-    class Human
+    #region Inheritance
+    public class Human
     {
         protected string Legs { get; set; }
-        protected string hands { get; set; }
+        public string hands { get; set; }
         protected string brain { get; set; }
 
         public string name { get; set; }
@@ -45,7 +52,7 @@ namespace OOPWithCSharp
         }
     }
 
-    class Sergeon : Human
+    public class Sergeon : Human
     {
         public string MedicalDegree { get; set; }
 
@@ -54,7 +61,7 @@ namespace OOPWithCSharp
         }
     }
 
-    class Teacher : Human
+    public class Teacher : Human
     {
         public string Qualification { get; set; }
 
@@ -63,7 +70,7 @@ namespace OOPWithCSharp
         }
     }
 
-    class OrthopediacSurgeon : Sergeon
+    public class OrthopediacSurgeon : Sergeon
     {
         public void PerformOrthopadiacSurgery()
         {
@@ -71,7 +78,7 @@ namespace OOPWithCSharp
         }
     }
 
-    class MathematicsTeacher : Teacher
+    public class MathematicsTeacher : Teacher
     {
         public string MathematicsDegree { get; set; }
 
@@ -81,7 +88,7 @@ namespace OOPWithCSharp
         }
     }
 
-    class Sofa
+    public class Sofa
     {
         public string Foam { get; set; }
 
@@ -90,7 +97,7 @@ namespace OOPWithCSharp
         }
     }
 
-    class Bed
+    public class Bed
     {
         public string Foam { get; set; }
 
@@ -104,8 +111,86 @@ namespace OOPWithCSharp
     }
 
     //It cannot be implimented because of multiple inheritance scenario
-    //class SofaCumBed: Sofa, Bed
+    //public class SofaCumBed: Sofa, Bed
     //{
 
     //}
+    #endregion
+
+    #region Containment
+
+    //Inheritance is a tightly coupled design
+    public class CricketerA : Human
+    {
+
+        public void Batting()
+        {
+            hands = "hands";
+            Console.WriteLine("Using Human: {0} via inheritance", this.hands);
+        }
+    }
+
+    //Containment is a loosely coupled design and can be alternative to inheritance
+    public class CricketerB
+    {
+        public Human human = new Human();
+
+        public void Batting()
+        {
+            human.hands = "hands";
+            Console.WriteLine("Using Human: {0} via containment", human.hands);
+        }
+    }
+
+    public class Car
+    {
+        public Engine engine { get; set; }
+        public CarAC ac { get; set; }
+        public Generator generator { get; set; }
+        public Tire tire { get; set; }
+    }
+
+    public class RotaryObject
+    {
+        public void Rotation()
+        {
+
+        }
+    }
+
+    public class Generator : RotaryObject
+    {
+    }
+
+    public class CarAC : RotaryObject
+    {
+    }
+
+    public class Engine : RotaryObject
+    {
+    }
+
+    public class Tire
+    {
+        public int radius { get; set; }
+        public int thickness { get; set; }
+        public int wallHeight { get; set; }
+        public string material { get; set; }
+    }
+
+    #region Composition and Aggregation
+    public class House
+    {
+        //Composition: House is strongy dependent upon rooms 
+        public string BedRoom { get; set; }
+        public string DrawingRoom { get; set; }
+        public string LivingRoom { get; set; }
+
+        //Aggregation: House is weekly dependent upon lamp and sofa
+        public string Lamp { get; set; }
+        public Sofa sofa { get; set; }
+    }
+    #endregion
+
+    #endregion
 }
