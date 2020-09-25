@@ -68,3 +68,27 @@ Having an object of another class as property in the current class.
 -Whereever comonalities are clear, "is a relation" is clear and most importantly code reusability is acheived then use inheritance, else
 use containment. Thats why in real life projects inheritance and containment both are very important features and are used frequently but containment
 always be used mre freqently than inheritance.
+
+Polymorphism:-
+Same name but different behaviours.
+
+2 Types:-
+
+1-Dynamic: overriding. Inheritance is mandatory
+
+2-Static: Function overloading. Inheritance is not mandatory
+	a-Number of the parameters
+	b-Type of the parameters.
+	c-Order of the type of the parameters.
+
+Abstraction:-
+
+1-When you(class) dont need to bother about the details of a complex functionality.
+2-Its a concept or idea.
+3-No object can be created for the abstract class.
+SmartPhone (abstract)
+	Iphone - Android (abstract)
+		Iphone8
+			Iphone8s
+4-Abstract class can have concrete members but concrete class cannot have contains abstract members.
+5-Every "concrete" child of the abstract class has to implement abstract members.
