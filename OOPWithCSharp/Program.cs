@@ -207,6 +207,7 @@ namespace OOPWithCSharp
         public CarAC ac { get; set; }
         public Generator generator { get; set; }
         public Tire tire { get; set; }
+        public float Price { get; set; }
     }
 
     public class RotaryObject
