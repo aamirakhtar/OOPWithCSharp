@@ -52,9 +52,6 @@ namespace OOPWithCSharp
             list2.Remove(2);
 
             Console.ReadLine();
-
-
-
         }
 
         public class Corolla : Car
