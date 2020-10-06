@@ -165,3 +165,23 @@ because Interface has all the members abstract by default.
 
 So all the members of the child class implementing/inheriting interface members, must implement that interface members.
 
+Types of files:-
+.exe: executable file.
+1-Draw back is its platform dependent, means if its built for 64 bit platform then it cannot be worked on 32 bit platform.
+
+.dll(Assembly/Class library): re-usable:-
+1-Its used to have central logic like data access layer to refer in different projects.
+2-Change management is easy, as all logic in one dll which can be referred in diefferent projects so you jst need to change in one place.
+3-We can different versions of same dll and refer in config file.
+4-They are Pre compiled libraries like SPs.
+5-All the dependencies are confined in one dll so that other dlls dont have to refer them, means no raplication or no rebuilding and deployment.
+
+Draw back:-
+1-Draw back is we have to deploy dll to all projects if we want to reflect change in all projects.
+2-Its a microsoft technology so if you want to make it work on other technologies like java python etc you have to write/use some wrapper to make it work.
+3-Other draw back is its platform dependent, means if its built for 64 bit platform then it cannot be worked on 32 bit platform.
+
+GAC (Global Assembly Cache):-
+This is a central cache for assemblies or dlls where you can deploy those shared dlls which are used in several projects, so that
+deployment can be in one plae and a change can be reflected to all places.
+

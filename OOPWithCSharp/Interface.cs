@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccessLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,10 @@ namespace OOPWithCSharp
         {
             MDDScanner mddScanner = new MDDScanner(new JsonLogger());
             mddScanner.ScanBarcode();
+
+            DAL dal = new DAL();
+            dal.GetDataFromDB("connection string");
+            dal.SaveDataToDB("data");
 
             Console.ReadLine();
         }
