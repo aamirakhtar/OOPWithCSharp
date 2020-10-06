@@ -12,8 +12,12 @@ namespace OOPWithCSharp
     {
         public static void Main()
         {
+            goto Data_Access;
+
             MDDScanner mddScanner = new MDDScanner(new JsonLogger());
             mddScanner.ScanBarcode();
+
+            Data_Access:
 
             DAL dal = new DAL();
             dal.GetDataFromDB("connection string");

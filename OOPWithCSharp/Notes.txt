@@ -23,7 +23,7 @@ a-public: Accessible to every object.
 b-private: Cannot be accessed by any object.
 c-protected: Only be accessed within heirarchy or family.
 d-internal: Can only be accessed within the DLL or Project.
-e-protected-internal: 
+e-protected-internal: internal within the dll and protected oustside the dll.
 
 3-Containment: "has a relation":
 	a-Aggregation.
@@ -189,7 +189,12 @@ means you dont have to copy that dll into all prjects bin folder, just one place
 
 
 C# Casings:-
-For variables we microsoft suggested to use.
+For variables microsoft suggested to use camel casing.
+eg:
+isUserValid
+
+Pascal casing(title case):-
+its used for classes, namespaces, properties infact for everything other than variables.
 
 API:-
 On crast to dll Its used for hetrogenious platforms bcz it works on http(s) so can be consumed by any client.
