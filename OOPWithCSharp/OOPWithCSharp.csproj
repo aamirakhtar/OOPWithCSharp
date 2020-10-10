@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface.cs" />
+    <Compile Include="StaticClasses.cs" />
     <Compile Include="ValueTypesRefTypes.cs" />
     <Compile Include="OOP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -19,6 +19,8 @@ namespace OOPWithCSharp
 
             Data_Access:
 
+            string name = "aamir";
+
             DAL dal = new DAL();
             dal.GetDataFromDB("connection string");
             dal.SaveDataToDB("data");
