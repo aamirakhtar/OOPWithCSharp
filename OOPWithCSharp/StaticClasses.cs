@@ -55,7 +55,7 @@ namespace OOPWithCSharp
         }
     }
 
-    public class EntryPoint
+    public class StaticClasses
     {
         public static void Main()
         {

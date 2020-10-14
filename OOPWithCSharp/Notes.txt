@@ -231,3 +231,11 @@ Static constructor executes before all the constructors.
 Static Class cannot be inherited.
 
 Constructors:-
+Basic functionality of constructor is to initialize contained objects at the time of construction or memory allocation.
+
+3-Types:-
+1-Default constructor: Prameter less:
+	a-Non-static.
+	b-Static.
+2-Overloaded constructor: With Parameters.
+3-Copy Constructor: which takes object of the same class as parameter.
