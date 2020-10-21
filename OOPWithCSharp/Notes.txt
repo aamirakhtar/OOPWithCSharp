@@ -239,3 +239,10 @@ Basic functionality of constructor is to initialize contained objects at the tim
 	b-Static.
 2-Overloaded constructor: With Parameters.
 3-Copy Constructor: which takes object of the same class as parameter.
+
+Array:-
+1-To create multiple objects/variables with one name in memory.
+2-It creates all the objects/variables in contigous memory locations.
+3-Bcz it creates contigous memory locations, we use indexes over it.
+4-Bcz it has indexes, you can use loops on it.
+5-Bcz it creates variables on contigous locations, you have to declare array length at the time of creation. Thats why it cannot grow dynamically.

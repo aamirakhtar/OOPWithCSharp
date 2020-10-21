@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>OOPWithCSharp.TypeCasting</StartupObject>
+    <StartupObject>OOPWithCSharp.Array</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -49,7 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Array.cs" />
     <Compile Include="Constructors.cs" />
+    <Compile Include="ExceptionHandeling.cs" />
     <Compile Include="Interface.cs" />
     <Compile Include="StaticClasses.cs" />
     <Compile Include="TypeCasting.cs" />
