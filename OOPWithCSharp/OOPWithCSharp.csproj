@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>OOPWithCSharp.Array</StartupObject>
+    <StartupObject>OOPWithCSharp.ParamsInOutRef</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -53,6 +53,7 @@
     <Compile Include="Constructors.cs" />
     <Compile Include="ExceptionHandeling.cs" />
     <Compile Include="Interface.cs" />
+    <Compile Include="ParamsInOutRef.cs" />
     <Compile Include="StaticClasses.cs" />
     <Compile Include="TypeCasting.cs" />
     <Compile Include="ValueTypesRefTypes.cs" />
