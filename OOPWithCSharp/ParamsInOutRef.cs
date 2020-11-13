@@ -10,8 +10,9 @@ namespace OOPWithCSharp
     {
         public static void Main()
         {
-            Console.WriteLine(Add(1, 2, 3, 4, 5, 6, 7));
-            Add(new int[] { 1, 2, 3, 4, 5, 6, 7 });
+            int val = Add(1, 2, 3, 4, 5, 6, 7);
+            Console.WriteLine();
+            //Add(new int[] { 1, 2, 3, 4, 5, 6, 7 });
 
             //When you suppose to return multiple values from the function, you have 2 methods "out" and "ref"
 
